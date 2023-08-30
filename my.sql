@@ -1,0 +1,17 @@
+-- create
+CREATE TABLE STUDENTS (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  adress TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO STUDENTS VALUES (0001, 'Igor', '30', 'Moscow');
+INSERT INTO STUDENTS VALUES (0002, 'Anna', '20', 'Moscow');
+INSERT INTO STUDENTS VALUES (0003, 'Nikita', '30', 'Kazan');
+INSERT INTO STUDENTS VALUES (0004, 'Dasha', '15', 'Ufa');
+INSERT INTO STUDENTS VALUES (0005, 'Anton', '18', 'Moscow');
+
+-- fetch 
+SELECT name FROM STUDENTS WHERE adress = 'Moscow' AND age BETWEEN 18 AND 29;
